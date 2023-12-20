@@ -144,6 +144,31 @@ En HTML, hay varias etiquetas destinadas a formatear y estructurar texto. Aquí 
 
 Estas son solo algunas de las etiquetas más comunes para trabajar con texto en HTML. Puedes combinarlas y personalizarlas según tus necesidades específicas para crear una presentación de texto efectiva en tu página web.
 
+**Ejemplo Final**
+```html
+<!-- Sección de inicio -->
+<h1>Hola, Bienvenido a mi página web</h1>
+<p>¡Gracias por visitar! Aquí encontrarás información sobre mi trabajo y proyectos en desarrollo web.</p>
+<p>Explora las secciones de "Acerca de", "Habilidades" y "Contacto" para conocer más sobre mí.</p>
+
+<hr>
+<!-- Sección Acerca de mí -->
+<h2>Hola, Soy Alex Roel</h2>
+<p>Soy un apasionado desarrollador web con experiencia en tecnologías como <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.</p>
+<p>Mi objetivo es crear experiencias web atractivas y funcionales que satisfagan las necesidades de los
+                usuarios.</p>
+<hr>
+<!-- Sección Habilidades -->
+<h2>Habilidades</h2>
+<p>A lo largo de mi carrera, he desarrollado habilidades en diversas tecnologías y lenguajes deprogramación, incluyendo:</p>
+<ul>
+    <li><b>HTML</b> y <b>CSS</b> para diseño y estilo web.</li>
+    <li><b>JavaScript</b> para la creación de interactividad en el lado del cliente.</li>
+    <li>Bases de datos como <b>MySQL</b>.</li>
+    <li><b>Git</b> para el control de versiones.</li>
+</ul>
+```
+
 ---
 ## Etiquetas de enlaces
 En HTML, las etiquetas de enlaces se utilizan para crear hipervínculos que conectan diferentes páginas web, recursos o ubicaciones dentro de una página. Aquí están las principales etiquetas de enlaces:
@@ -190,6 +215,45 @@ En HTML, las etiquetas de enlaces se utilizan para crear hipervínculos que cone
    ```
 
 Estas son las etiquetas principales para trabajar con enlaces en HTML. Puedes personalizarlos según tus necesidades específicas. Recuerda que el atributo `href` es esencial, ya que indica la dirección a la que el enlace lleva.
+**Ejemplo Final**
+´´´html
+<!-- Barra de navegación -->
+<ul>
+    <li><a href="#home">Inicio</a></li>
+    <li><a href="#about">Acerca de</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+</ul>
+
+<!-- Sección de inicio -->
+<section id="home">
+    <h1>Hola, Bienvenido a mi página web</h1>
+    <p>¡Gracias por visitar! Aquí encontrarás información sobre mi trabajo y proyectos en desarrollo web.</p>
+    <p>Explora las secciones de "Acerca de", "Habilidades" y "Contacto" para conocer más sobre mí.</p>
+</section>
+
+<hr>
+
+<!-- Sección Acerca de mí -->
+<section id="about">
+    <h2>Hola, Soy Alex Roel</h2>
+    <p>Soy un apasionado desarrollador web con experiencia en tecnologías como HTML, CSS y JavaScript.</p>
+    <p>Mi objetivo es crear experiencias web atractivas y funcionales que satisfagan las necesidades de los usuarios.</p>
+</section>
+
+<hr>
+
+<!-- Sección Habilidades -->
+<section id="skills">
+    <h2>Habilidades</h2>
+    <p>A lo largo de mi carrera, he desarrollado habilidades en diversas tecnologías y lenguajes de programación, incluyendo:</p>
+    <ul>
+        <li><b>HTML</b> y <b>CSS</b> para diseño y estilo web.</li>
+        <li><b>JavaScript</b> para la creación de interactividad en el lado del cliente.</li>
+        <li>Bases de datos como <b>MySQL</b>.</li>
+        <li><b>Git</b> para el control de versiones.</li>
+    </ul>
+</section>
+´´´
 
 ---
 ## Etiquetas de Imagenes
@@ -236,7 +300,11 @@ Además de la etiqueta `<img>`, aquí hay algunas consideraciones adicionales:
 - **Enlaces en Imágenes:**
   Puedes envolver una etiqueta `<img>` con una etiqueta `<a>` para hacer que la imagen sea un enlace clickeable.
 
+
   ```html
+
+  <img src="img/alexroel.jpg" alt="Foto de Alex Roel" width="200">
+  
   <a href="enlace-a-la-pagina.html">
       <img src="imagen-ejemplo.jpg" alt="Imagen de ejemplo">
   </a>
@@ -264,13 +332,15 @@ La estructura semántica en HTML se refiere al uso de etiquetas que expresan sig
    - Se utiliza para definir un menú de navegación, que generalmente contiene enlaces a otras partes del sitio web.
 
    ```html
-   <nav>
-       <ul>
-           <li><a href="#inicio">Inicio</a></li>
-           <li><a href="#acerca-de">Acerca de</a></li>
-           <li><a href="#contacto">Contacto</a></li>
-       </ul>
-   </nav>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
    ```
 
 3. **`<main>`: Contenido Principal**
@@ -324,6 +394,78 @@ La estructura semántica en HTML se refiere al uso de etiquetas que expresan sig
 
 Estas etiquetas proporcionan una estructura semántica que no solo ayuda a los desarrolladores a entender el contenido, sino que también mejora la accesibilidad y la indexación por parte de los motores de búsqueda. Es importante elegir las etiquetas apropiadas según la naturaleza del contenido que estás marcando.
 
+**Ejemplo Final**
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!-- Sección de inicio -->
+        <section id="home">
+            <h1>Hola, Bienvenido a mi página web</h1>
+            <p>¡Gracias por visitar! Aquí encontrarás información sobre mi trabajo y proyectos en desarrollo web.</p>
+            <p>Explora las secciones de "Acerca de", "Habilidades" y "Contacto" para conocer más sobre mí.</p>
+        </section>
+
+        <hr>
+
+        <!-- Sección Acerca de mí -->
+        <section id="about">
+            <img src="img/alexroel.jpg" alt="Foto de Alex Roel" width="200">
+            <h2>Hola, Soy Alex Roel</h2>
+            <p>Soy un apasionado desarrollador web con experiencia en tecnologías como HTML, CSS y JavaScript.</p>
+            <p>Mi objetivo es crear experiencias web atractivas y funcionales que satisfagan las necesidades de los
+                usuarios.</p>
+        </section>
+
+        <hr>
+
+        <!-- Sección Habilidades -->
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <p>A lo largo de mi carrera, he desarrollado habilidades en diversas tecnologías y lenguajes de
+                programación,
+                incluyendo:</p>
+            <ul>
+                <li><b>HTML</b> y <b>CSS</b> para diseño y estilo web.</li>
+                <li><b>JavaScript</b> para la creación de interactividad en el lado del cliente.</li>
+                <li>Bases de datos como <b>MySQL</b>.</li>
+                <li><b>Git</b> para el control de versiones.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 alexroel.com</p>
+    </footer>
+</body>
+
+</html>
+```
+
 ---
 ## Formularios
 En HTML, los formularios son elementos fundamentales que permiten a los usuarios enviar datos al servidor web para su procesamiento. Aquí hay una estructura básica de un formulario HTML y algunas de las etiquetas comunes utilizadas en formularios:
@@ -373,6 +515,32 @@ Explicación de algunas etiquetas y atributos importantes en este formulario:
 - `required`: Atributo booleano que indica que un campo debe ser completado antes de enviar el formulario.
 
 Este es un ejemplo básico. Puedes personalizar y expandir el formulario según tus necesidades. Además, es importante agregar lógica de validación tanto en el lado del cliente (usando JavaScript) como en el lado del servidor para garantizar la integridad de los datos recibidos.
+
+**Ejemplo Final**
+```html
+...
+        <!-- Sección de Contacto -->
+        <section id="contact">
+            <h2>Contactame</h2>
+            <!-- Formulario de contacto -->
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required> <br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required> <br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <hr>
+    </main>
+...
+```
 
 ---
 ## Resumen 
