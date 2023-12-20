@@ -215,8 +215,10 @@ En HTML, las etiquetas de enlaces se utilizan para crear hipervínculos que cone
    ```
 
 Estas son las etiquetas principales para trabajar con enlaces en HTML. Puedes personalizarlos según tus necesidades específicas. Recuerda que el atributo `href` es esencial, ya que indica la dirección a la que el enlace lleva.
+
 **Ejemplo Final**
-´´´html
+
+```html
 <!-- Barra de navegación -->
 <ul>
     <li><a href="#home">Inicio</a></li>
@@ -253,7 +255,7 @@ Estas son las etiquetas principales para trabajar con enlaces en HTML. Puedes pe
         <li><b>Git</b> para el control de versiones.</li>
     </ul>
 </section>
-´´´
+```
 
 ---
 ## Etiquetas de Imagenes
