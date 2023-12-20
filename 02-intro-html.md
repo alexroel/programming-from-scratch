@@ -45,7 +45,7 @@ La estructura básica de un documento HTML consta de varias partes esenciales. A
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página</title>
+    <title>Mi página web</title>
 </head>
 <body>
 
