@@ -4,7 +4,7 @@
 2. Primeros estilos
 3. Selectores de elementos
 4. Modelo de caja
-5. Posicionamientos y diseño
+5. Tipos de display
 6. Pseudo-clases y Pseudo-elementos
 7. Responsive Design
 8. Resumen
@@ -268,6 +268,64 @@ El modelo de caja en CSS es un concepto fundamental que describe cómo se repres
    ```
 
 Entender cómo estas propiedades interactúan es crucial para controlar el diseño de una página web y garantizar una presentación visual coherente.
+
+---
+## Tipos de display
+En CSS, la propiedad `display` se utiliza para especificar el tipo de caja que un elemento debería generar y cómo debería comportarse. Aquí hay algunos de los valores más utilizados para la propiedad `display`:
+
+### 1. **`block`:**
+   - Elementos de bloque ocupan todo el ancho disponible y comienzan en una nueva línea. Ejemplos comunes son `<div>`, `<p>`, y encabezados `<h1>` a `<h6>`.
+
+   ```css
+   div {
+     display: block;
+   }
+   ```
+
+### 2. **`inline`:**
+   - Elementos en línea ocupan solo el ancho necesario y no comienzan en una nueva línea. Ejemplos son `<span>`, `<a>`, y elementos de texto.
+
+   ```css
+   span {
+     display: inline;
+   }
+   ```
+
+### 3. **`inline-block`:**
+   - Combina características de elementos en línea y de bloque. Ocupa solo el ancho necesario, pero permite ajustar la altura y anchura.
+
+   ```css
+   img {
+     display: inline-block;
+   }
+   ```
+
+### 4. **`flex`:**
+   - Permite crear un contenedor flexible y organizar los elementos hijos en una fila o columna, facilitando la creación de diseños flexibles.
+
+   ```css
+   .contenedor-flex {
+     display: flex;
+   }
+   ```
+
+### 5. **`grid`:**
+   - Similar a `flex`, pero proporciona una cuadrícula bidimensional para organizar elementos en filas y columnas.
+
+   ```css
+   .contenedor-grid {
+     display: grid;
+   }
+   ```
+
+### 6. **`none`:**
+   - Oculta completamente el elemento en la página. Es útil para controlar la visibilidad mediante scripts o para ocultar elementos en diferentes situaciones.
+
+   ```css
+   .oculto {
+     display: none;
+   }
+   ```
 
 ---
 ## Posicionamientos y Diseño
