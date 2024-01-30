@@ -1,0 +1,60 @@
+html{
+    background-color: #068FD3;
+}
+
+body{
+    /* Estilos de texto */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Estilos de modelo de caja */
+    width: 600px;
+    background-color: #EBF5FB;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #273746;
+}
+
+/* Selector de pseudoclase */
+a:hover{
+    color: #068FD3;
+}
+
+h1{
+    /* Estilos de texto */
+    font-size: 60px;
+    text-align:  center;
+    text-shadow: 3px 3px 1px #566573;
+    color: #1C2833;
+    /* Estilos de modelo de caja */
+    margin: 0;
+}
+
+p, li {
+    /* Estilos de texto */
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/* Centrando imagen */
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilizando el boton */
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #1C2833;
+    color: #EBF5FB;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #273746;
+    cursor: pointer;
+}
+
