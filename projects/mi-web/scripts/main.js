@@ -1,7 +1,7 @@
 
-// Im´magen dinamico 
+// Imámagen dinamico 
 let miImagen = document.querySelector('img');
-miImagen.onclick = function () {
+function cambiarImg() {
     let miSrc = miImagen.getAttribute('src');
     if (miSrc === 'images/logo-google.png') {
         miImagen.setAttribute('src', 'images/logo-google2.webp');
@@ -11,26 +11,25 @@ miImagen.onclick = function () {
 }
 
 // Perosonalización de mensaje de título principal
-let miBoton = document.querySelector('button');
 let miTitulo = document.querySelector('h1');
 
 function enviarNombreUsuario() {
     let miNombre = prompt('Ingrese su nombre por favor:');
-    if (miNombre) {
+
+    // Si no hay nombre
+    if (!miNombre) {
+        enviarNombreUsuario();
+    } else {
         localStorage.setItem('name', miNombre);
         miTitulo.innerHTML = 'Google es genial, ' + miNombre; 
-    } else {
-        enviarNombreUsuario();
     }
 }
 
+
+// Recuperar nombre de usuario desde navegador
 if (localStorage.getItem('name')) {
     let storedName = localStorage.getItem('name');
     miTitulo.innerHTML = 'Google es genial, ' + storedName;
 } else {
-    enviarNombreUsuario();
-}
-
-miBoton.onclick = function () {
     enviarNombreUsuario();
 }
